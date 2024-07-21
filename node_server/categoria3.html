@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Torneo de Tenis de Mesa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="inputContainer">
+        <input type="text" id="playerName" placeholder="Nombre del jugador">
+        <button onclick="addPlayer()">Agregar Jugador</button>
+        <button onclick="resetTournament()">Reiniciar Torneo</button>
+    </div>
+    <div>
+        <input type="date" id="tournamentDate" placeholder="Fecha del torneo">
+        <input type="text" id="tournamentLocation" placeholder="Lugar del torneo">
+    </div>
+    <div>
+        <input type="date" id="searchDate" placeholder="Fecha del torneo">
+        <input type="text" id="searchLocation" placeholder="Lugar del torneo">
+        <button onclick="searchTournament()">Buscar Torneo</button>
+    </div>
+    <div id="tableContainer"></div>
+    <div id="resultsContainer"></div>
+    <button onclick="saveResults()">Guardar Resultados</button>
+    <script src="scripts.js"></script>
+</body>
+</html>
